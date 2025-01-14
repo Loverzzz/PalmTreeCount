@@ -47,22 +47,22 @@ Ensure that your dataset paths are correctly set in the data.yaml configuration 
      ```
 6. Model Training
 Initialize the YOLO model with a pre-trained weight:
-  ```
-  from ultralytics import YOLO
-  
-  model = YOLO('yolov8s.pt')  # Pre-trained YOLOv8 model
-  ```
+     ```
+     from ultralytics import YOLO
+     
+     model = YOLO('yolov8s.pt')  # Pre-trained YOLOv8 model
+     ```
 7. Start training the model:
-```
-model.train(
-    data='path/to/data.yaml',  # Path to your dataset configuration
-    epochs=50,  # Number of epochs
-    imgsz=512,  # Image size
-    batch=16,  # Batch size
-    name='palm_tree_model',  # Name of the trained model
-    single_cls=True  # Only one class (palm tree)
-)
-```
+      ```
+      model.train(
+          data='path/to/data.yaml',  # Path to your dataset configuration
+          epochs=50,  # Number of epochs
+          imgsz=512,  # Image size
+          batch=16,  # Batch size
+          name='palm_tree_model',  # Name of the trained model
+          single_cls=True  # Only one class (palm tree)
+      )
+      ```
 8. Sliding Window Detection
 To detect objects in large images, we use a sliding window approach. This approach divides large images into smaller chunks with overlapping regions and performs detection on each chunk.
     ```
