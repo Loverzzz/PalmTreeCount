@@ -9,7 +9,6 @@ This repository demonstrates the process of training a YOLOv8 model for palm tre
 - [Sliding Window Detection](#sliding-window-detection)
 - [Post-Processing](#post-processing)
 - [Result Visualization](#result-visualization)
-- [License](#license)
 
 ## Installation
 
