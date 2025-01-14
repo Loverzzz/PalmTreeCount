@@ -52,7 +52,7 @@ Initialize the YOLO model with a pre-trained weight:
   
   model = YOLO('yolov8s.pt')  # Pre-trained YOLOv8 model
   ```
-Start training the model:
+7. Start training the model:
 ```
 model.train(
     data='path/to/data.yaml',  # Path to your dataset configuration
@@ -63,7 +63,7 @@ model.train(
     single_cls=True  # Only one class (palm tree)
 )
 ```
-Sliding Window Detection
+8. Sliding Window Detection
 To detect objects in large images, we use a sliding window approach. This approach divides large images into smaller chunks with overlapping regions and performs detection on each chunk.
     ```
     def sliding_window(image, window_size=(512, 512), step_size=256):
@@ -75,7 +75,7 @@ To detect objects in large images, we use a sliding window approach. This approa
             for x in range(0, w - window_size[0], step_size):
                 yield (x, y, image[y:y + window_size[1], x:x + window_size[0]])
     ```
-Post-Processing
+9. Post-Processing
 After detection, the results are combined back into the original image. The final image includes a label showing the total number of detected palm trees.
     ```
     def combine_image_pieces_with_text(original_image_path, cropped_images_folder, total_detections, window_size=(512, 512), step_size=256):
@@ -85,7 +85,7 @@ After detection, the results are combined back into the original image. The fina
         # Combine image pieces and add text with total detections
         ...
     ```
-Result Visualization
+10. Result Visualization
 After processing, the image with combined detections is displayed and saved:
     ```
       cv2.imshow("Gambar Gabungan Final", cropped_image)
