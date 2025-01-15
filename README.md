@@ -2,14 +2,6 @@
 
 This repository demonstrates the process of training a YOLOv8 model for palm tree detection from large images using a sliding window approach. The project involves training a custom YOLOv8 model and using it for object detection in large images, followed by post-processing to combine the detected patches back into the original image.
 
-## Table of Contents
-- [Installation](#installation)
-- [Dataset Preparation](#dataset-preparation)
-- [Model Training](#model-training)
-- [Sliding Window Detection](#sliding-window-detection)
-- [Post-Processing](#post-processing)
-- [Result Visualization](#result-visualization)
-
 ## Installation
 
 To run this project, you need to install the required dependencies. The necessary libraries are listed below:
