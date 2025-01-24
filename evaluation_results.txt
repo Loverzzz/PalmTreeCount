@@ -1,0 +1,6 @@
+Evaluation Results:
+metrics/precision(B): 0.9349553772346653
+metrics/recall(B): 0.873015873015873
+metrics/mAP50(B): 0.9513484010641188
+metrics/mAP50-95(B): 0.44743955966355936
+fitness: 0.4978304438036153

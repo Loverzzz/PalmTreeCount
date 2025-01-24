@@ -1,0 +1,5 @@
+train: D:/backup/download/house-prices-advanced-regression-techniques/SAWITPRO/count/dataset/images/train
+val: D:/backup/download/house-prices-advanced-regression-techniques/SAWITPRO/count/dataset/images/val
+
+nc: 1
+names: ['palmtree']
